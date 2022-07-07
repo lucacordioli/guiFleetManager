@@ -1,0 +1,73 @@
+// Define variable defaults
+$body-bg: #fafafa;
+
+$gray-100: #fafafa;
+$gray-300: #F4F4F4;
+$gray-700: #5C5E62;
+$gray-800: #393C41;
+$gray-900: #171a20;
+
+$blue: #0712F9;
+$light-blue: #0798F9;
+$red: #EC1A26;
+$light-red: #FEB301;
+
+$primary: $gray-900;
+$secondary: $blue;
+
+$blue-gradient: linear-gradient(-120deg, $blue, $light-blue);
+$red-gradient: linear-gradient(-30deg, $red, $light-red);
+
+$vib-colors: (
+        "blue-gradient": $blue-gradient,
+        "red-gradient": $red-gradient
+);
+
+$thumbnail-border-width: 0;
+$btn-border-width: 2px;
+
+$h1-font-size: 6.2rem;
+$h2-font-size: 5.2rem;
+
+$container-padding-x: 2rem;
+
+
+  // Then import Bootstrap and BootstrapVue SCSS files (order is important)
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue-3/src/styles/styles.scss';
+
+.btn {
+  border-radius: 1000px;
+  outline: none;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-primary {
+  color: $white;
+  background-image: $blue-gradient !important;
+  border: 0;
+  background-position: 100% 0;
+  background-size: 150% 150%;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.btn-primary:hover {
+  background-position: 0% 0;
+}
+.btn-secondary {
+}
+.btn-secondary:hover {
+}
+h1 {
+  font-weight: bolder;
+}
+h2 {
+  font-weight: bolder;
+}
